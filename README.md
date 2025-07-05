@@ -2,7 +2,7 @@
 
 A cozy, interactive cooking game where you learn to make the traditional Kazakh-Kyrgyz dish — **Beshbarmak** — step by step inside a watercolor-style kitchen.
 
-![Screenshot](./assets/images/success-screen.png)
+![Screenshot](./assets/images/welcome-screen.png)
 
 ## Features
 

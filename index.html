@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beshbarmak Cooking Game</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beshbarmak Cooking Game</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-    <div id="game-container">
-        <div id="welcome-screen" class="screen">
-            <h1>Learn to Cook Beshbarmak</h1>
-            <button id="start-btn">Start Cooking</button>
-        </div>
-        
-        <div id="game-screen" class="screen hidden">
-            <div id="progress-bar"></div>
-            <div id="step-content">
-                <h2 id="step-title"></h2>
-                <div id="step-image"></div>
-                <p id="step-description"></p>
-                <button id="next-btn">Next Step</button>
-            </div>
-        </div>
-        
-        <div id="success-screen" class="screen hidden">
-            <h2>Congratulations!</h2>
-            <p>You've learned to make beshbarmak!</p>
-            <button id="restart-btn">Cook Again</button>
-        </div>
+  <div id="game-container">
+    <!-- Welcome Screen -->
+    <div id="welcome-screen" class="screen">
+      <h1>Cooking Game</h1>
+      <p>Learn to cook the dish "Five Fingers"<br>
+      Step into a cozy kitchen and master this beloved recipe!</p>
+      <button id="start-btn"></button>
     </div>
-    
-    <script src="js/game.js"></script>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen hidden">
+      <div id="game-layout">
+        <!-- Left: Ingredients -->
+        <div class="ingredients-panel" id="ingredients"></div>
+
+        <!-- Center: Drop Area -->
+        <div >
+            <div id="drop-area">Drop ingredients here</div>
+            <button id="next-btn" disabled></button>
+        </div>
+
+        <!-- Right: Instructions -->
+        <div class="step-instructions">
+          <div id="progress-bar">
+            <div class="progress-fill" style="width: 0%"></div>
+          </div>
+          <h2 id="step-title"></h2>
+          <p id="step-description"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Screen -->
+    <div id="success-screen" class="screen hidden">
+      <h1>Congratulations!</h1>
+      <p>You've successfully learned to make beshbarmak!</p>
+      <button id="again-btn"></button>
+    </div>
+  </div>
+  
+  <script src="js/game.js"></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beshbarmak Cooking Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="welcome-screen" class="screen">
+            <h1>Learn to Cook Beshbarmak</h1>
+            <button id="start-btn">Start Cooking</button>
+        </div>
+        
+        <div id="game-screen" class="screen hidden">
+            <div id="progress-bar"></div>
+            <div id="step-content">
+                <h2 id="step-title"></h2>
+                <div id="step-image"></div>
+                <p id="step-description"></p>
+                <button id="next-btn">Next Step</button>
+            </div>
+        </div>
+        
+        <div id="success-screen" class="screen hidden">
+            <h2>Congratulations!</h2>
+            <p>You've learned to make beshbarmak!</p>
+            <button id="restart-btn">Cook Again</button>
+        </div>
+    </div>
+    
+    <script src="js/game.js"></script>
+</body>
+</html>
